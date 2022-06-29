@@ -9,7 +9,7 @@ from brain_games.cli import welcome_user
 
 def main():
     """Print greet and ask username."""
-    # I don't know what to write here
+    # Simple script logic.
     print('Welcome to the Brain Games!')
     welcome_user()
 
