@@ -4,7 +4,6 @@
 import random
 import prompt
 
-
 def even_game():
     """Even game code and greeting."""
     print('Welcome to the Brain Games!')
