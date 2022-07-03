@@ -31,4 +31,3 @@ def calc_game():
             print(f"'{answer}' is wrong answer ;(. Correct answer was '{correct_answer}'.")
         return print(f"Let's try again, {name}!")
     print(f"Congratulations, {name}!")
-calc_game()
