@@ -4,12 +4,12 @@
 
 #!/usr/bin/env python
 
-from brain_games.even_logic import even_game
+from brain_games.even_logic import calc_game
 
 
 def main():
-    """Even game code."""
-    even_game()
+    """Calc game code."""
+    calc_game()
 
 
 if __name__ == '__main__':
