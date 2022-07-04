@@ -66,7 +66,7 @@ def calc_game():
         answer = prompt.string('Your answer: ')
         counter += 1
         get_result(answer, correct_answer, name)
-        if answer != correct_answer:
+        if answer != str(correct_answer):
             break
     if counter == 3:
         print(f"Congratulations, {name}!")
