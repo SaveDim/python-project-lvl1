@@ -1,4 +1,4 @@
-"""Add brain_even game."""
+"""Add brain_logic for each game."""
 
 
 import random
@@ -23,7 +23,7 @@ def get_result(answer, correct_answer, name):
 
 
 def even_game():
-    """Even game code and greeting."""
+    """Even game code."""
     name = welcome_user()
     counter = 0
     print('Answer "yes" if number is even, otherwise answer "no".')
@@ -44,7 +44,7 @@ def even_game():
 
 
 def calc_game():
-    """Calc game code and."""
+    """Calc game code."""
     name = welcome_user()
     print('What is the result of the expression?')
     action_lst = ['+', '-', '*']
