@@ -44,7 +44,7 @@ def even_game():
 
 
 def calc_game():
-    """Calc game code!."""
+    """Calc game code."""
     name = welcome_user()
     print('What is the result of the expression?')
     action_lst = ['+', '-', '*']
@@ -73,6 +73,7 @@ def calc_game():
 
 
 def find_gcd():
+    """Gcd game code."""
     name = welcome_user()
     counter = 0
     print('Find the greatest common divisor of given numbers.')
@@ -89,6 +90,32 @@ def find_gcd():
             if num_1 % correct_answer == 0 and num_2 % correct_answer == 0:
                 break
             correct_answer -= 1
+        answer = prompt.string('Your answer: ')
+        get_result(answer, correct_answer, name)
+        if str(answer) != str(correct_answer):
+            break
+        counter += 1
+    if counter == 3:
+        print(f"Congratulations, {name}!")
+
+
+def find_skipped_number():
+    """Progression game code."""
+    name = welcome_user()
+    counter = 0
+    print('What number is missing in the progression?')
+    for _ in range(3):
+        num = random.randint(2, 6)
+        progression = [(i * num) for i in range(2, 12)]
+        random_index = random.randint(0, len(progression) - 1)
+        progression[random_index] = '..'
+        index = progression.index('..')
+        if index != 0:
+            correct_answer = progression[index - 1] + num
+        else:
+            correct_answer = progression[index + 1] - num
+        print('Question: ', end='')
+        print(*progression, sep=' ')
         answer = prompt.string('Your answer: ')
         get_result(answer, correct_answer, name)
         if str(answer) != str(correct_answer):
