@@ -15,7 +15,7 @@ def welcome_user():
 
 def get_result(answer, correct_answer, name):
     """Getting user answer."""
-    if int(answer) == correct_answer:
+    if answer == str(correct_answer):
         print('Correct!')
     else:
         print(f"'{answer}' is wrong answer ;(. Correct answer was '{correct_answer}'.")
