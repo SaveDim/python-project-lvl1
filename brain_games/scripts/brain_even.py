@@ -4,11 +4,11 @@
 
 #!/usr/bin/env python
 
-from brain_games.games.even_logic import even_game
+from brain_games.games.games_logic import even_game
 
 
 def main():
-    """Even game code."""
+    """Even game function."""
     even_game()
 
 
