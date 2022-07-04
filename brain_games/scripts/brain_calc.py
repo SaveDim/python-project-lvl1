@@ -1,6 +1,6 @@
 # -*- coding example -*-.
 
-"""Add greeting to the game."""
+"""Add calc game."""
 
 #!/usr/bin/env python
 

@@ -1,10 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="3bfb09f7-2678-4bd5-9c95-1439fc74541e" name="Changes" comment="Add brain-progression game">
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/hexlet-code-0.2.0.tar.gz" beforeDir="false" afterPath="$PROJECT_DIR$/dist/hexlet-code-0.2.0.tar.gz" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/hexlet_code-0.2.0-py3-none-any.whl" beforeDir="false" afterPath="$PROJECT_DIR$/dist/hexlet_code-0.2.0-py3-none-any.whl" afterDir="false" />
+    <list default="true" id="3bfb09f7-2678-4bd5-9c95-1439fc74541e" name="Changes" comment="Add brain-progression asciinema to README.md">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/brain_games/games/games_logic.py" beforeDir="false" afterPath="$PROJECT_DIR$/brain_games/games/games_logic.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/brain_games/scripts/brain_calc.py" beforeDir="false" afterPath="$PROJECT_DIR$/brain_games/scripts/brain_calc.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/brain_games/scripts/brain_even.py" beforeDir="false" afterPath="$PROJECT_DIR$/brain_games/scripts/brain_even.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/brain_games/scripts/brain_gcd.py" beforeDir="false" afterPath="$PROJECT_DIR$/brain_games/scripts/brain_gcd.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/brain_games/scripts/brain_progression.py" beforeDir="false" afterPath="$PROJECT_DIR$/brain_games/scripts/brain_progression.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pyproject.toml" beforeDir="false" afterPath="$PROJECT_DIR$/pyproject.toml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -204,7 +208,14 @@
       <option name="project" value="LOCAL" />
       <updated>1656949875739</updated>
     </task>
-    <option name="localTasksCounter" value="13" />
+    <task id="LOCAL-00013" summary="Add brain-progression asciinema to README.md">
+      <created>1656950161726</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1656950161726</updated>
+    </task>
+    <option name="localTasksCounter" value="14" />
     <servers />
   </component>
   <component name="UnknownFeatures">
@@ -228,6 +239,7 @@
     <MESSAGE value="Add brain-gcd game ti Makefile" />
     <MESSAGE value="Add brain-gcd Asciinema to README.md" />
     <MESSAGE value="Add brain-progression game" />
-    <option name="LAST_COMMIT_MESSAGE" value="Add brain-progression game" />
+    <MESSAGE value="Add brain-progression asciinema to README.md" />
+    <option name="LAST_COMMIT_MESSAGE" value="Add brain-progression asciinema to README.md" />
   </component>
 </project>

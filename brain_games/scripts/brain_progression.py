@@ -1,6 +1,6 @@
 # -*- coding example -*-.
 
-"""Add greeting to the game."""
+"""Add progression game."""
 
 #!/usr/bin/env python
 
@@ -8,7 +8,7 @@ from brain_games.games.games_logic import find_skipped_number
 
 
 def main():
-    """Calc game code."""
+    """Progression game code."""
     find_skipped_number()
 
 
