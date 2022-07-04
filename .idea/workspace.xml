@@ -1,11 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="3bfb09f7-2678-4bd5-9c95-1439fc74541e" name="Changes" comment="Add little fixes">
+    <list default="true" id="3bfb09f7-2678-4bd5-9c95-1439fc74541e" name="Changes" comment="Add bug fixes">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Makefile" beforeDir="false" afterPath="$PROJECT_DIR$/Makefile" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/brain_games/games/games_logic.py" beforeDir="false" afterPath="$PROJECT_DIR$/brain_games/games/games_logic.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/hexlet-code-0.2.0.tar.gz" beforeDir="false" afterPath="$PROJECT_DIR$/dist/hexlet-code-0.2.0.tar.gz" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -41,7 +39,7 @@
     &quot;settings.editor.selected.configurable&quot;: &quot;editor.preferences.fonts.default&quot;
   }
 }</component>
-  <component name="RunManager" selected="Makefile Target.brain-calc">
+  <component name="RunManager" selected="Python.games_logic">
     <configuration name="brain-calc" type="MAKEFILE_TARGET_RUN_CONFIGURATION" factoryName="Makefile" temporary="true">
       <makefile filename="$PROJECT_DIR$/Makefile" target="brain-calc" workingDirectory="" arguments="">
         <envs />
@@ -60,13 +58,7 @@
       </makefile>
       <method v="2" />
     </configuration>
-    <configuration name="package-install" type="MAKEFILE_TARGET_RUN_CONFIGURATION" factoryName="Makefile" temporary="true">
-      <makefile filename="$PROJECT_DIR$/Makefile" target="package-install" workingDirectory="" arguments="">
-        <envs />
-      </makefile>
-      <method v="2" />
-    </configuration>
-    <configuration name="calc_logic" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+    <configuration name="Test" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="python-project-lvl1" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -74,11 +66,32 @@
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/brain_games" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/brain_games/games" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/brain_games/calc_logic.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/brain_games/games/Test.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="games_logic" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="python-project-lvl1" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/brain_games/games" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/brain_games/games/games_logic.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -89,10 +102,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.games_logic" />
+        <item itemvalue="Python.Test" />
         <item itemvalue="Makefile Target.brain-calc" />
         <item itemvalue="Makefile Target.build" />
         <item itemvalue="Makefile Target.inst" />
-        <item itemvalue="Python.calc_logic" />
       </list>
     </recent_temporary>
   </component>
@@ -147,7 +161,14 @@
       <option name="project" value="LOCAL" />
       <updated>1656939945894</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="Add bug fixes">
+      <created>1656941070285</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1656941070285</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="UnknownFeatures">
@@ -166,6 +187,7 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Add little fixes" />
-    <option name="LAST_COMMIT_MESSAGE" value="Add little fixes" />
+    <MESSAGE value="Add bug fixes" />
+    <option name="LAST_COMMIT_MESSAGE" value="Add bug fixes" />
   </component>
 </project>
