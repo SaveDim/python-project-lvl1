@@ -4,7 +4,7 @@
 <a href="https://asciinema.org/a/506040">brain-calc Asciinema</a><br>
 <a href="https://asciinema.org/a/FWUtGCl23O2fADULzkHbpNPRT">brain-gcd Asciinema</a><br>
 <a href="https://asciinema.org/a/7MIvRspsjSzMvWGKRe3V5tntK">brain-progression Asciinema</a><br>
-<a href="https://asciinema.org/a/iplQum2hBcvlEJsVEuOthQ3TM">brain-prime Asciinema</a>
+<a href="https://asciinema.org/a/iplQum2hBcvlEJsVEuOthQ3TM">brain-prime Asciinema</a><br>
 
 
 ### Hexlet tests and linter status:
