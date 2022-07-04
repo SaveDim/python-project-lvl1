@@ -70,3 +70,4 @@ def calc_game():
             break
     if counter == 3:
         print(f"Congratulations, {name}!")
+calc_game()
