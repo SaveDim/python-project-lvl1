@@ -44,7 +44,7 @@ def even_game():
 
 
 def calc_game():
-    """Calc game code."""
+    """Calc game code!."""
     name = welcome_user()
     print('What is the result of the expression?')
     action_lst = ['+', '-', '*']
