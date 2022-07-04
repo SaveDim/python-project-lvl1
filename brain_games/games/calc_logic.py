@@ -10,18 +10,19 @@ def calc_game():
     name = prompt.string('May I have your name? ')
     print(f'Hello, {name}!')
     print('What is the result of the expression?')
-    action = ['+', '-', '*']
+    action_lst = ['+', '-', '*']
     for _ in range(3):
+        random_index = random.randint(0, len(action_lst) - 1)
         correct_answer = 0
         num_1 = random.randint(1, 101)
         num_2 = random.randint(1, 101)
-        if random.choice(action) == '+':
+        if action_lst[random_index] == '+':
             print(f'Question: {num_1} + {num_2}')
             correct_answer = num_1 + num_2
-        elif random.choice(action) == '-':
+        elif action_lst[random_index] == '-':
             print(f'Question: {num_1} - {num_2}')
             correct_answer = num_1 - num_2
-        elif random.choice(action) == '*':
+        elif action_lst[random_index] == '*':
             print(f'Question: {num_1} * {num_2}')
             correct_answer = num_1 * num_2
         answer = prompt.string('Your answer: ')
@@ -29,5 +30,6 @@ def calc_game():
             print('Correct!')
         elif str(answer) != str(correct_answer):
             print(f"'{answer}' is wrong answer ;(. Correct answer was '{correct_answer}'.")
-        return print(f"Let's try again, {name}!")
+            return print(f"Let's try again, {name}!")
     print(f"Congratulations, {name}!")
+calc_game()

@@ -3,12 +3,11 @@
 
 import random
 import prompt
+from same_func import welcome_user
 
 def even_game():
     """Even game code and greeting."""
-    print('Welcome to the Brain Games!')
-    name = prompt.string('May I have your name? ')
-    print(f'Hello, {name}!')
+    name = welcome_user()
     print('Answer "yes" if number is even, otherwise answer "no".')
     for _ in range(3):
         question = random.randint(1, 101)
@@ -18,10 +17,11 @@ def even_game():
             correct_answer = 'no'
         print(f'Question: {question}')
         answer = prompt.string('Your answer: ')
-        if (answer == 'yes' and question % 2 == 0) or (answer == 'no' and question % 2 != 0):
+        if answer == correct_answer:
             print('Correct!')
         elif answer != correct_answer:
             print(f"'{answer}' is wrong answer ;(. Correct answer was '{correct_answer}'.")
             return print(f"Let's try again, {name}!")
     print(f"Congratulations, {name}!")
 
+even_game()

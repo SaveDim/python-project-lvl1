@@ -4,7 +4,7 @@
 
 #!/usr/bin/env python
 
-from brain_games.even_logic import even_game
+from brain_games.games.even_logic import even_game
 
 
 def main():
