@@ -69,8 +69,8 @@ def calc_game():
         get_result(answer, correct_answer, name)
         if str(answer) != str(correct_answer):
             break
-    # if counter == 3:
-        print(f"Congratulations, {name}!" if counter == 3 else '')
+    if counter == 3:
+        print(f"Congratulations, {name}!")
 
 
 def find_gcd():
