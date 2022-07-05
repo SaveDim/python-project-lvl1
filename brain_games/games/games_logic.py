@@ -79,12 +79,11 @@ def find_gcd():
     counter = 0
     print('Find the greatest common divisor of given numbers.')
     for _ in range(3):
-        num_1 = random.randint(1, 101)
-        num_2 = random.randint(1, 101)
-        if num_1 > num_2:
-            num_1, num_2 = num_2, num_1
-        elif num_1 == num_2:
-            num_2 += 1
+        num_1, num_2 = random.randint(1, 101), random.randint(1, 101)
+        # if num_1 > num_2:
+        #     num_1, num_2 = num_2, num_1
+        # elif num_1 == num_2:
+        #     num_2 += 1
         correct_answer = num_2
         print(f'Question: {num_1} {num_2}')
         while correct_answer > 0:

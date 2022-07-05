@@ -1,7 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="ee26d49f-4ede-40fa-837d-ab86c6b2ae02" name="Changes" comment="Fix bug" />
+    <list default="true" id="ee26d49f-4ede-40fa-837d-ab86c6b2ae02" name="Changes" comment="Fix bug">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/brain_games/games/games_logic.py" beforeDir="false" afterPath="$PROJECT_DIR$/brain_games/games/games_logic.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/brain_games/scripts/brain_even.py" beforeDir="false" afterPath="$PROJECT_DIR$/brain_games/scripts/brain_even.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/brain_games/scripts/brain_games.py" beforeDir="false" afterPath="$PROJECT_DIR$/brain_games/scripts/brain_games.py" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -224,7 +229,14 @@
       <option name="project" value="LOCAL" />
       <updated>1656999016392</updated>
     </task>
-    <option name="localTasksCounter" value="18" />
+    <task id="LOCAL-00018" summary="Fix bug">
+      <created>1656999520504</created>
+      <option name="number" value="00018" />
+      <option name="presentableId" value="LOCAL-00018" />
+      <option name="project" value="LOCAL" />
+      <updated>1656999520504</updated>
+    </task>
+    <option name="localTasksCounter" value="19" />
     <servers />
   </component>
   <component name="UnknownFeatures">
