@@ -23,6 +23,23 @@ def get_result(answer, correct_answer, name):
         print(f"Let's try again, {name}!")
 
 
+def get_correct_answer():
+    action_lst = ['+', '-', '*']
+    random_index = random.randint(0, len(action_lst) - 1)
+    correct_answer = 0
+    num_1 = random.randint(1, 101)
+    num_2 = random.randint(1, 101)
+    if action_lst[random_index] == '+':
+        print(f'Question: {num_1} + {num_2}')
+        correct_answer = num_1 + num_2
+    elif action_lst[random_index] == '-':
+        print(f'Question: {num_1} - {num_2}')
+        correct_answer = num_1 - num_2
+    elif action_lst[random_index] == '*':
+        print(f'Question: {num_1} * {num_2}')
+        correct_answer = num_1 * num_2
+    return correct_answer
+
 def even_game():
     """Even game code."""
     name = welcome_user()
@@ -48,22 +65,9 @@ def calc_game():
     """Calc game code."""
     name = welcome_user()
     print('What is the result of the expression?')
-    action_lst = ['+', '-', '*']
     counter = 0
     for _ in range(3):
-        random_index = random.randint(0, len(action_lst) - 1)
-        correct_answer = 0
-        num_1 = random.randint(1, 101)
-        num_2 = random.randint(1, 101)
-        if action_lst[random_index] == '+':
-            print(f'Question: {num_1} + {num_2}')
-            correct_answer = num_1 + num_2
-        elif action_lst[random_index] == '-':
-            print(f'Question: {num_1} - {num_2}')
-            correct_answer = num_1 - num_2
-        elif action_lst[random_index] == '*':
-            print(f'Question: {num_1} * {num_2}')
-            correct_answer = num_1 * num_2
+        correct_answer = get_correct_answer()
         answer = prompt.string('Your answer: ')
         counter += 1
         get_result(answer, correct_answer, name)
@@ -142,4 +146,3 @@ def is_prime():
         counter += 1
     if counter == 3:
         print(f"Congratulations, {name}!")
-calc_game()
