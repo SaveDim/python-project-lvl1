@@ -40,6 +40,7 @@ def get_correct_answer():
         correct_answer = num_1 * num_2
     return correct_answer
 
+
 def even_game():
     """Even game code."""
     name = welcome_user()
