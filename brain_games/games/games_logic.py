@@ -69,8 +69,8 @@ def calc_game():
         get_result(answer, correct_answer, name)
         if str(answer) != str(correct_answer):
             break
-    if counter == 3:
-        print(f"Congratulations, {name}!")
+    # if counter == 3:
+        print(f"Congratulations, {name}!" if counter == 3 else '')
 
 
 def find_gcd():
@@ -80,10 +80,6 @@ def find_gcd():
     print('Find the greatest common divisor of given numbers.')
     for _ in range(3):
         num_1, num_2 = random.randint(1, 101), random.randint(1, 101)
-        # if num_1 > num_2:
-        #     num_1, num_2 = num_2, num_1
-        # elif num_1 == num_2:
-        #     num_2 += 1
         correct_answer = num_2
         print(f'Question: {num_1} {num_2}')
         while correct_answer > 0:
@@ -146,3 +142,4 @@ def is_prime():
         counter += 1
     if counter == 3:
         print(f"Congratulations, {name}!")
+calc_game()
