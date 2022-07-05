@@ -2,7 +2,7 @@
 
 """Add calc game."""
 
-#!/usr/bin/env python
+# !/usr/bin/env python
 
 from brain_games.games.games_logic import calc_game
 
