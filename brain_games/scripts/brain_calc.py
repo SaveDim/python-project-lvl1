@@ -4,7 +4,7 @@
 
 # !/usr/bin/env python
 
-from brain_games.games.games_logic import calc_game
+from brain_games.games.calc import calc_game
 
 
 def main():

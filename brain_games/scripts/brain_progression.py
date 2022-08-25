@@ -4,7 +4,7 @@
 
 # !/usr/bin/env python
 
-from brain_games.games.games_logic import find_skipped_number
+from brain_games.games.engine import find_skipped_number
 
 
 def main():

@@ -4,7 +4,7 @@
 
 # !/usr/bin/env python
 
-from brain_games.games.games_logic import is_prime
+from brain_games.games.engine import is_prime
 
 
 def main():

@@ -4,7 +4,7 @@
 
 # !/usr/bin/env python
 
-from brain_games.games.games_logic import find_gcd
+from brain_games.games.engine import find_gcd
 
 
 def main():
