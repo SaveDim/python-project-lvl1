@@ -3,9 +3,13 @@ name = "hexlet-code"
 version = "0.2.0"
 description = ""
 authors = ["SaveDim <jieto35@yandex.ru>"]
+repository = "https://github.com/SaveDim/python-project-lvl1"
 packages = [
   { include = "brain_games" },
  ]
+classifiers = [
+    "Topic :: Hexlet education"
+    ]
 
 [tool.poetry.dependencies]
 python = "^3.10"
