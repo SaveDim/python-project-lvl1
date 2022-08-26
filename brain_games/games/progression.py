@@ -1,4 +1,4 @@
-from brain_games.engine import *
+from brain_games.engine import welcome_user, get_result
 import prompt
 import random
 
