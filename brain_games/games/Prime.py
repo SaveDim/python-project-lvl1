@@ -1,4 +1,4 @@
-from . import *
+from brain_games.engine import *
 import prompt
 import random
 
@@ -25,5 +25,3 @@ def is_prime():
         counter += 1
     if counter == 3:
         print(f"Congratulations, {name}!")
-
-print(is_prime())
