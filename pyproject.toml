@@ -1,6 +1,6 @@
 [tool.poetry]
 name = "hexlet-code"
-version = "0.2.0"
+version = "0.1.0"
 description = ""
 authors = ["SaveDim <jieto35@yandex.ru>"]
 repository = "https://github.com/SaveDim/python-project-lvl1"
