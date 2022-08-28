@@ -4,12 +4,13 @@
 
 # !/usr/bin/env python
 
-from brain_games.games.progression import find_skipped_number
+from brain_games.engine import run
+from brain_games.games import progression
 
 
 def main():
-    """Progression game code."""
-    find_skipped_number()
+    """Run progression game."""
+    run(progression)
 
 
 if __name__ == '__main__':

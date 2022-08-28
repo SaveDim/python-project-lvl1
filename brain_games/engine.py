@@ -1,39 +1,54 @@
-import random
-import prompt
+from random import randint
+
+from brain_games.cli import get_user_answer, get_user_name
+
+NUMBER_OF_ROUNDS = 3
+
+
+def generate_number():
+    """Return random number from range."""
+    return randint(1, 100)
+
+
+def check_answer(user_answer, correct_answer):
+    """Check users answer."""
+    if user_answer == correct_answer:
+        message = 'Correct!'
+        return (True, message)
+    message = "'{wrong}' is wrong answer ;(. Correct answer was '{correct}'."
+    return (False, message.format(wrong=user_answer, correct=correct_answer))
 
 
 def welcome_user():
-    """Ask username."""
+    """Ask user for a name and print greeting."""
+    user_name = get_user_name()
+    greeting = f'Hello, {user_name}!'
+    print(greeting)
+    return user_name
+
+
+def run(game=None):
+    """Run game."""
     print('Welcome to the Brain Games!')
-    name = prompt.string('May I have your name? ')
-    print(f'Hello, {name}!')
-    return name
+    if game:
+        print(game.DESCRIPTION)
+    print()
+    user_name = welcome_user()
+    if game:
+        print()
+        engine(user_name, game.make_question)
 
 
-def get_result(answer, correct_answer, name):
-    """Getting user answer."""
-    if answer == str(correct_answer):
-        print('Correct!')
-    else:
-        print(f"'{answer}' is wrong answer ;(."
-              f"Correct answer was '{correct_answer}'.")
-        print(f"Let's try again, {name}!")
-
-
-def get_correct_answer():
-
-    num_1 = random.randint(1, 101)
-    num_2 = random.randint(1, 101)
-
-    correct_answers = {
-        '+': num_1 + num_2,
-        '-': num_1 - num_2,
-        '*': num_1 * num_2
-    }
-
-    random_key = random.choice(list(correct_answers.keys()))
-    correct_answer = correct_answers[random_key]
-
-    print(f'Question: {num_1} {random_key} {num_2}')
-
-    return correct_answer
+def engine(user_name, play):
+    """Game engine process."""
+    correct_answers = 0
+    while correct_answers < NUMBER_OF_ROUNDS:
+        question, correct_answer = play()
+        print(question)
+        res, msg = check_answer(get_user_answer(), correct_answer)
+        print(msg)
+        if not res:
+            print(f"Let's try again, {user_name}!")
+            return
+        correct_answers += 1
+    print(f'Congratulations, {user_name}!')

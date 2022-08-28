@@ -4,12 +4,13 @@
 
 # !/usr/bin/env python
 
-from brain_games.games.gcd import find_gcd
+from brain_games.engine import run
+from brain_games.games import gcd
 
 
 def main():
-    """Gcd game code."""
-    find_gcd()
+    """Run even game."""
+    run(gcd)
 
 
 if __name__ == '__main__':

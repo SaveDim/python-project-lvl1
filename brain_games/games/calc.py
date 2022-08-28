@@ -1,18 +1,33 @@
-from brain_games.engine import welcome_user, get_result, get_correct_answer
-import prompt
+import operator
+from random import choice
+
+from brain_games.engine import generate_number
+
+DESCRIPTION = 'What is the result of the expression?'
 
 
-def calc_game():
-    """Calc game code."""
-    name = welcome_user()
-    print('What is the result of the expression?')
-    counter = 0
-    for _ in range(3):
-        correct_answer = get_correct_answer()
-        answer = prompt.string('Your answer: ')
-        get_result(answer, correct_answer, name)
-        if str(answer) != str(correct_answer):
-            break
-        counter += 1
-    if counter == 3:
-        print(f"Congratulations, {name}!")
+operations = {
+    '+': operator.add,
+    '-': operator.sub,
+    '*': operator.mul,
+}
+
+
+def generate_operation():
+    """Generate random operation."""
+    return choice(list(operations.keys()))
+
+
+def correct_answer(num1, operation, num2):
+    """Return correct answer."""
+    return str(operations[operation](num1, num2))
+
+
+def make_question():
+    """Generate game question."""
+    num1 = generate_number()
+    num2 = generate_number()
+    operation = generate_operation()
+    question = f'Question: {num1} {operation} {num2}'
+    answer = correct_answer(num1, operation, num2)
+    return (question, answer)

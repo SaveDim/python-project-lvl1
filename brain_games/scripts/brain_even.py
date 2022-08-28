@@ -4,12 +4,13 @@
 
 # !/usr/bin/env python
 
-from brain_games.games.even import even_game
+from brain_games.engine import run
+from brain_games.games import even
 
 
 def main():
-    """Even game function."""
-    even_game()
+    """Run even game."""
+    run(even)
 
 
 if __name__ == '__main__':

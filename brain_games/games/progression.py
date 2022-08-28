@@ -1,29 +1,23 @@
-from brain_games.engine import welcome_user, get_result
-import prompt
-import random
+from random import choice, randint
+
+DESCRIPTION = 'What number is missing in the progression?'
 
 
-def find_skipped_number():
-    """Progression game code."""
-    name = welcome_user()
-    counter = 0
-    print('What number is missing in the progression?')
-    for _ in range(3):
-        num = random.randint(2, 6)
-        progression = [(i * num) for i in range(2, 12)]
-        random_index = random.randint(0, len(progression) - 1)
-        progression[random_index] = '..'
-        index = progression.index('..')
-        if index != 0:
-            correct_answer = progression[index - 1] + num
-        else:
-            correct_answer = progression[index + 1] - num
-        print('Question: ', end='')
-        print(*progression, sep=' ')
-        answer = prompt.string('Your answer: ')
-        get_result(answer, correct_answer, name)
-        if str(answer) != str(correct_answer):
-            break
-        counter += 1
-    if counter == 3:
-        print(f"Congratulations, {name}!")
+def make_progression():
+    """Generate arithemtic progression."""
+    initial_number = randint(1, 100)
+    delta = randint(1, 25)
+    length = 10
+    maximum_number = (delta * length) + initial_number
+    return range(initial_number, maximum_number, delta)
+
+
+def make_question():
+    """Generate game question."""
+    prog = make_progression()
+    secret = choice(prog)
+    progression = ' '.join([
+        '..' if num == secret else str(num) for num in prog
+    ])
+    question = f'Question: {progression}'
+    return (question, str(secret))

@@ -4,12 +4,13 @@
 
 # !/usr/bin/env python
 
-from brain_games.games.prime import is_prime
+from brain_games.engine import run
+from brain_games.games import prime
 
 
 def main():
-    """Prime game code."""
-    is_prime()
+    """Run prime game."""
+    run(prime)
 
 
 if __name__ == '__main__':

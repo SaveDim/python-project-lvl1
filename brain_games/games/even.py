@@ -1,24 +1,16 @@
-from brain_games.engine import welcome_user, get_result
-import prompt
-import random
+from brain_games.engine import generate_number
+
+DESCRIPTION = 'Answer "yes" if number even otherwise answer "no".'
 
 
-def even_game():
-    """Even game code."""
-    name = welcome_user()
-    counter = 0
-    print('Answer "yes" if number is even, otherwise answer "no".')
-    for _ in range(3):
-        question = random.randint(1, 101)
-        if question % 2 == 0:
-            correct_answer = 'yes'
-        else:
-            correct_answer = 'no'
-        print(f'Question: {question}')
-        answer = prompt.string('Your answer: ')
-        get_result(answer, correct_answer, name)
-        counter += 1
-        if answer != correct_answer:
-            break
-        if counter == 3:
-            print(f"Congratulations, {name}!")
+def make_question():
+    """Generate game question."""
+    number = generate_number()
+    question = f'Question: {number}'
+    answer = correct_answer(number)
+    return (question, answer)
+
+
+def correct_answer(number):
+    """Return expected answer."""
+    return 'no' if number % 2 else 'yes'

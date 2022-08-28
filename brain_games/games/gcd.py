@@ -1,25 +1,19 @@
-from brain_games.engine import welcome_user, get_result
-import prompt
-import random
+from brain_games.engine import generate_number
+
+DESCRIPTION = 'Find the greatest common divisor of given numbers.'
 
 
-def find_gcd():
-    """Gcd game code."""
-    name = welcome_user()
-    counter = 0
-    print('Find the greatest common divisor of given numbers.')
-    for _ in range(3):
-        num_1, num_2 = random.randint(1, 101), random.randint(1, 101)
-        correct_answer = num_2
-        print(f'Question: {num_1} {num_2}')
-        while correct_answer > 0:
-            if num_1 % correct_answer == 0 and num_2 % correct_answer == 0:
-                break
-            correct_answer -= 1
-        answer = prompt.string('Your answer: ')
-        get_result(answer, correct_answer, name)
-        if str(answer) != str(correct_answer):
-            break
-        counter += 1
-    if counter == 3:
-        print(f"Congratulations, {name}!")
+def make_question():
+    """Generate game question."""
+    num1 = generate_number()
+    num2 = generate_number()
+    question = f'Question: {num1} {num2}'
+    answer = gcd(num1, num2)
+    return (question, str(answer))
+
+
+def gcd(num1, num2):
+    """Return GCD of two numbers."""
+    if not num2:
+        return num1
+    return gcd(num2, num1 % num2)

@@ -4,15 +4,14 @@
 
 # !/usr/bin/env python
 
-from brain_games.cli import welcome_user
+from brain_games.engine import run
 
 
 def main():
-    """Print greet and ask username."""
-    # Simple script logic.
-    print('Welcome to the Brain Games!')
-    welcome_user()
+    """Welcome user without running a game."""
+    run()
 
 
 if __name__ == '__main__':
     main()
+
