@@ -12,7 +12,7 @@ def get_round():
         '+': num_1 + num_2,
         '-': num_1 - num_2,
         '*': num_1 * num_2
-        }
+    }
 
     random_key = choice(list(correct_answers.keys()))
     correct_answer = str(correct_answers[random_key])
