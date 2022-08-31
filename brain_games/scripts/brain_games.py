@@ -4,14 +4,13 @@
 
 # !/usr/bin/env python
 
-from brain_games import engine
+from brain_games.cli import welcome_user
 
 
 def main():
     """Welcome user without running a game."""
-    engine()
+    welcome_user()
 
 
 if __name__ == '__main__':
     main()
-### have to change func and import from cli
