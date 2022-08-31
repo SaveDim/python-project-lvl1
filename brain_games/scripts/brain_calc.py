@@ -1,10 +1,10 @@
-from brain_games.engine import run
+from brain_games import engine
 from brain_games.games import calc
 
 
 def main():
     """Run calc game."""
-    run(calc)
+    engine(calc)
 
 
 if __name__ == '__main__':

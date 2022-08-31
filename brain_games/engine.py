@@ -1,7 +1,5 @@
 from random import randint
 
-from brain_games.cli import get_user_answer, get_user_name
-
 ROUNDS_COUNT = 3
 
 
@@ -42,10 +40,10 @@ ROUNDS_COUNT = 3
 def engine(game):
     """Game process."""
     name = string('May I have your name? ')
-    (question, answer) = game.get_round()
+    (question, correct_answer) = game.get_round()
     print(f'Hello, {name}!')
     print(f'{game.DESCRIPTION}')
-    for _ in ROUNDS_COUNT:
+    for _ in range(ROUNDS_COUNT):
         print(f'Question: {question}')
         answer = string('Your answer:  ')
         if answer == correct_answer:
