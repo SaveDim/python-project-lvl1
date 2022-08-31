@@ -40,7 +40,7 @@ ROUNDS_COUNT = 3
 def engine(game):
     """Game process."""
     name = string('May I have your name? ')
-    (question, correct_answer) = game.get_round()
+    question, correct_answer = game.get_round()
     print(f'Hello, {name}!')
     print(f'{game.DESCRIPTION}')
     for _ in range(ROUNDS_COUNT):
@@ -48,7 +48,7 @@ def engine(game):
         answer = string('Your answer:  ')
         if answer == correct_answer:
             print('Correct!')
-            (question, correct_answer) = game.get_round()
+            question, correct_answer = game.get_round()
         else:
             print(f"'{answer}' is wrong answer ;(. "
                   f"Correct answer was '{correct_answer}'\n"

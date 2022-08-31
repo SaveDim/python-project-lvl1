@@ -1,16 +1,14 @@
-from brain_games.engine import generate_number
+from random import randint
 
-DESCRIPTION = 'Answer "yes" if number even otherwise answer "no".'
+DESCRIPTION = 'Answer "yes" if number is even otherwise answer "no".'
 
 
-def make_question():
+def get_round():
     """Generate game question."""
-    number = generate_number()
+    number = randint(1, 101)
     question = f'Question: {number}'
-    answer = correct_answer(number)
-    return (question, answer)
-
-
-def correct_answer(number):
-    """Return expected answer."""
-    return 'no' if number % 2 else 'yes'
+    if number % 2 == 0:
+        correct_answer = 'yes'
+    else:
+        correct_answer = 'no'
+    return question, correct_answer
