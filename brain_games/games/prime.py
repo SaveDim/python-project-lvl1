@@ -1,23 +1,16 @@
-from brain_games.engine import generate_number
+from random import randint
 
 DESCRIPTION = 'Answer "yes" if given number is prime. Otherwise answer "no".'
 
 
-def is_prime(number):
-    """Check if number is prime or not."""
+def get_round():
+    """Get is prime round."""
+    correct_answer = 'yes'
+    number = randint(10, 1001)
     if number < 2 or not number % 2:
-        return False
-    counter = 3
-    while counter <= number // 2:
-        if not number % counter:
-            return False
-        counter += 2
-    return True
-
-
-def make_question():
-    """Generate game question."""
-    number = generate_number()
+        correct_answer = 'no'
+    for i in range(3, number // 2 + 1):
+        if not number % i:
+            correct_answer = 'no'
     question = f'Question: {number}'
-    answer = 'yes' if is_prime(number) else 'no'
-    return (question, answer)
+    return question, correct_answer

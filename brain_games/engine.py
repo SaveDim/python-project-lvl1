@@ -1,4 +1,4 @@
-from random import randint
+from prompt import string
 
 ROUNDS_COUNT = 3
 
