@@ -4,42 +4,8 @@ from brain_games.cli import get_user_name
 ROUNDS_COUNT = 3
 
 
-# def generate_number():
-#     """Return random number from range."""
-#     return randint(1, 100)
-#
-#
-# def check_answer(user_answer, correct_answer):
-#     """Check users answer."""
-#     if user_answer == correct_answer:
-#         message = 'Correct!'
-#         return (True, message)
-#     message = "'{wrong}' is wrong answer ;(. Correct answer was '{correct}'."
-#     return (False, message.format(wrong=user_answer, correct=correct_answer))
-#
-#
-# def welcome_user():
-#     """Ask user for a name and print greeting."""
-#     user_name = get_user_name()
-#     greeting = f'Hello, {user_name}!'
-#     print(greeting)
-#     return user_name
-#
-#
-# def run(game=None):
-#     """Run game."""
-#     print('Welcome to the Brain Games!')
-#     if game:
-#         print(game.DESCRIPTION)
-#     print()
-#     user_name = welcome_user()
-#     if game:
-#         print()
-#         engine(user_name, game.make_question)
-
-
 def engine(game):
-    """Game process."""
+    """Games common process."""
     name = get_user_name()
     question, correct_answer = game.get_round()
     print(f'Hello, {name}!')
