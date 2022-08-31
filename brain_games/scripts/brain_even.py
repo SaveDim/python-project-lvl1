@@ -4,7 +4,7 @@
 
 # !/usr/bin/env python
 
-from brain_games import engine
+from brain_games.engine import engine
 from brain_games.games import even
 
 

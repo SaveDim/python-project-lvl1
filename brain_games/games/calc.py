@@ -5,8 +5,8 @@ DESCRIPTION = 'What is the result of the expression?'
 
 def get_round():
     """Generate game question."""
-    num1 = randint(1, 101)
-    num2 = randint(1, 101)
+    num_1 = randint(1, 101)
+    num_2 = randint(1, 101)
 
     correct_answers = {
         '+': num_1 + num_2,
