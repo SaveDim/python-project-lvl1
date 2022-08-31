@@ -15,7 +15,7 @@ def get_round():
         }
 
     random_key = choice(list(correct_answers.keys()))
-    correct_answer = correct_answers[random_key]
-    question = f'Question: {num1} {random_key} {num2}'
+    correct_answer = str(correct_answers[random_key])
+    question = f'Question: {num_1} {random_key} {num_2}'
 
     return question, correct_answer
