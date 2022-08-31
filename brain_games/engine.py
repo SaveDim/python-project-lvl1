@@ -5,7 +5,7 @@ ROUNDS_COUNT = 3
 
 
 def engine(game):
-    """Game common process."""
+    """Common game process."""
     name = get_user_name()
     question, correct_answer = game.get_round()
     print(f'Hello, {name}!')
@@ -20,6 +20,6 @@ def engine(game):
             print(f"'{answer}' is wrong answer ;(. "
                 f"Correct answer was '{correct_answer}'\n"
                 f"Let's try again, {name}!",
-                 )
+                )
             return
     print(f'Congratulations, {name}!')
